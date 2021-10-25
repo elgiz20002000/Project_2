@@ -1,0 +1,30 @@
+{
+  "name": "uber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elgiz20002000/elgiz20002000.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elgiz20002000/elgiz20002000/issues"
+  },
+  "homepage": "https://github.com/elgiz20002000/elgiz20002000#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-rename": "^2.0.0"
+  },
+  "dependencies": {
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.43.3"
+  }
+}

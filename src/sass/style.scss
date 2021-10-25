@@ -1,0 +1,14 @@
+@import 'help/variables';
+.container {
+    margin: 0 auto;
+    max-width: 950px;
+}
+* {
+    font-family: 'Museo Moderno', sans-serif;
+}
+
+@import 'block/promo';
+@import 'block/header';
+@import 'block/buttons';
+@import 'block/advantage';
+@import 'help/media';
