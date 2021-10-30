@@ -6,13 +6,26 @@
     .consultation__title {
         font-size: 32px;
     }
+
+    .carusel {
+        .carusel__inner {
+            width: 80%;
+            img {
+                width: 100%;
+            }
+        }
+    }
   
 }
 
 @media (max-width: 767px) {
+
+    
     .container {
         width: 90vw;
     }
+
+
     .advantage__icon {
         width: 33%;
     }
@@ -75,10 +88,25 @@
         width: 100%;
         font-size: 23px;
     }
+   
 }
-
+    
+      
+  
 
 @media (max-width: 575px) {
+
+    .carusel {
+        .slick-dots {
+            li  {
+                button::before {
+                    font-size: 20px;
+                }
+                
+            }
+        }
+         
+    }
 
     .consultation__title {
         font-size: 21px;
