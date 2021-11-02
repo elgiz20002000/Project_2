@@ -53,13 +53,22 @@
 
     &__content {
         margin-top: 57px;
+        display: none;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &_active {
+            display: flex;
+        }
     }
 
-    .catalog-item {
+    &-item {
+        margin-bottom: 19px;
         width: 300px;
         min-height: 440px;
         padding: 19px 20px 25px;
         border: 2px solid #E8E8E8;
+        overflow: hidden;
 
         &__img {
             display: block;
@@ -86,7 +95,7 @@
             color: #0D0D0D;
         }
 
-        &__link {
+        &__link , &__close {
             display: block;
             margin-top: 10px;
             font-weight: 500;
@@ -98,6 +107,9 @@
             &:hover {
                 color: $myRed;
             }
+        }
+        &__close {
+            margin-top: 80px;
         }
 
         &__footer {
@@ -121,6 +133,60 @@
                 color: #050505;
             }
         }
+
+        &__wrapper {
+            display: flex;
+            width: calc(200% + 40px);
+           
+        }
+
+        &__content {
+            width: 50%;
+            transform: translateX(-100%);
+            transition: 0.5s all;
+
+            &_active {
+                transform: translateX(0%);
+            }
+        }
+
+        &__list {
+            position: relative;
+            padding: 0;
+            margin: 0;
+            margin-left: 40px;
+            width: 50%;
+            padding: 0 15px ;
+            transform: translateX(0%);
+            transition: 0.5s all;
+            list-style-type: none;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #555555;
+            li {
+                position: relative;
+                margin-bottom: 10px;
+
+                &::before {
+                    position: absolute;
+                    content:'';
+                    width: 6px;
+                    height: 6px;
+                    background: $myRed;
+                    left: -12px;
+                    top: 7px;
+                }
+            }
+
+         
+
+            &_active {
+                transform: translateX(-100%);
+                margin-left: 0px;
+            }
+        }
+    
     }
 
 }
