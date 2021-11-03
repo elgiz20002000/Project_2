@@ -15,6 +15,12 @@
             }
         }
     }
+
+    .catalog {
+        .catalog__content {
+            justify-content:space-around;
+        }
+    }
   
 }
 
@@ -88,6 +94,30 @@
         width: 100%;
         font-size: 23px;
     }
+
+    .review {
+        .review__item {
+            flex-direction: column;
+        }
+        .review__text {
+            display: block;
+            margin: 16px auto 0;
+        }
+        .review__content {
+            margin-top: 20px;
+        }
+        .review__descr {
+            text-align: center;
+        }
+        .review__subtitle {
+            text-align: center;
+        }
+
+        .review__round {
+            margin: 0  auto;
+        }
+
+    }
    
 }
     
@@ -155,5 +185,37 @@
 
     .consultation__descr {
         font-size: 15px;
+    }
+
+    .catalog {
+        .catalog__tabs {
+            flex-wrap: wrap;
+            .catalog__tab {
+                margin-top: 5px;
+            }
+        }
+        .catalog-item {
+            width: 280px;
+            &__wrapper {
+                width: calc(200% + 30px);
+            }
+            &__descr {
+                font-size: 13px;
+            }
+            &__list {
+                font-size: 11px;
+            }
+        }
+
+    }
+
+    .review {
+        .review__title {
+            font-size: 27px;
+        }
+
+        .review__text {
+            width: 100%;
+        }
     }
 }

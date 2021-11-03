@@ -32,6 +32,7 @@ $(document).ready(function(){
 
     toogle('.catalog-item__link');
     toogle('.catalog-item__close');
+    
       
  
     
