@@ -1,0 +1,79 @@
+.footer {
+    min-height: 630px;
+    position: relative;
+
+    &__info {
+        padding: 50px 54px 56px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 460px;
+        height: 270px;
+        background: $myRed;
+    }
+
+    &__adress {
+        display: block;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    &__tel {
+        display: block;
+        text-decoration: none;
+        margin-top: 36px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;
+
+        &:hover {
+            color: #FFFFFF;
+        }
+    }
+
+    &__social {
+        margin-top: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        &-item {
+            margin-right: 27px;
+            width: 53px;
+            height: 53px;
+            border: 2px solid #FFFFFF;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s all;
+            &:hover {
+                &:nth-child(1) {
+                    background-color:blue;
+                }
+                &:nth-child(2) {
+                    background-color:purple;
+                }
+                &:nth-child(3) {
+                    background-color:red;
+                }
+            }
+            &:nth-child(3) {
+                margin-right: 0;
+            }
+
+            img {
+                width: 24px;
+                height: 24px;   
+            }
+        }
+    }
+
+
+}
