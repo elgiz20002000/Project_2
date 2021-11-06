@@ -218,4 +218,33 @@
             width: 100%;
         }
     }
+
+    .footer {
+        .footer__info {
+            width: 100%;
+        }
+    }
+
+    div.modal {
+        padding: 14px 19px 19px;
+        width: 300px;
+        min-height: 370px;
+
+        .modal__close {
+            top: 5px;
+            right: 5px;
+        }
+
+        .modal__title {
+            font-size: 15px;
+        }
+
+        .modal__descr {
+            font-size: 12px;
+        }
+
+        .form {
+            width: 100%;
+        }
+}
 }
