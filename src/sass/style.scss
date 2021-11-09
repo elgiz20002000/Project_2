@@ -1,4 +1,5 @@
 @import 'help/variables';
+@import 'help/animations';
 .container {
     margin: 0 auto;
     max-width: 950px;
@@ -19,4 +20,5 @@
 @import 'block/footer';
 @import 'block/modal';
 @import 'block/forms';
+@import 'block/pageup';
 
